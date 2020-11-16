@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <title>Maciej Jaroszewski</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Maciej</span>Jaroszewski</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li class="current"><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('services')}}">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+<section id="newsletter">
+    <div class="container">
+        <h1>Subscribe to my newsletter</h1>
+        <form action="#">
+            <input type="email" placeholder="Enter email">
+            <button type="submit" class="button_1">Subscribe</button>
+        </form>
+    </div>
+</section>
+<section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">About Us</h1>
+        <p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda repellat qui facere exercitationem impedit consequatur laborum dolorem ratione distinctio minima! Autem voluptas provident doloribus modi molestias voluptatibus eligendi nobis, pariatur laudantium sint ex necessitatibus cumque sunt aspernatur? Praesentium, enim veniam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, harum! Est voluptates, nulla eos maxime delectus exercitationem enim! Ea impedit tempora quia? Laudantium distinctio sapiente blanditiis ipsam nostrum itaque? Eaque aperiam reprehenderit commodi fuga nostrum deleniti inventore excepturi tempora, nihil non incidunt illum dolor et culpa amet esse cumque blanditiis.</p>
+      </article>
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>What we do</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci harum atque velit cupiditate repellendus, mollitia deserunt fugiat neque illo!</p>
+        </div>
+      </aside>
+    </div>
+</section>
+<footer>
+    <p>Copyright &copy; 2020</p>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <title>Maciej Jaroszewski</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Maciej</span>Jaroszewski</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('services')}}">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+<section id="showcase">
+    <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias repudiandae, vel nobis totam animi illum deleniti veritatis iusto atque magni voluptatum suscipit quasi tempora omnis, fuga illo laboriosam cum nemo!</p>
+    </div>
+</section>
+<section id="newsletter">
+    <div class="container">
+        <h1>Subscribe to my newsletter</h1>
+        <form action="#">
+            <input type="email" placeholder="Enter email">
+            <button type="submit" class="button_1">Subscribe</button>
+        </form>
+    </div>
+</section>
+<section id="boxes">
+    <div class="container">
+        <div class="box">
+            <img src="../static/images/logo_html.png" alt="">
+            <h3>HTML5 Markup </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam?</p>
+        </div>
+        <div class="box">
+            <img src="../static/images/logo_css.png" alt="">
+            <h3>CSS Styling </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam?</p>
+        </div>
+        <div class="box">
+            <img src="../static/images/logo_brush.png" alt="">
+            <h3>Graphic Design </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam?</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>Copyright &copy; 2020</p>
+</footer>
+</body>
+</html>
+
